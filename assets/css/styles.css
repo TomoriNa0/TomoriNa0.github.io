@@ -56,6 +56,11 @@ nav {
   padding-top: 80px;
 }
 
+/* anchor offset for fixed nav */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 /* ── HERO (index only) ── */
 #hero {
   min-height: 100vh;
@@ -186,6 +191,36 @@ section { padding: 5rem 3.5rem; }
 .card-val a { color: var(--blue); text-decoration: none; }
 .card-val a:hover { color: var(--text); }
 
+/* ── EXPERIENCE LOGO & CATEGORY ── */
+.exp-logo-badge {
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(229,221,208,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+  color: rgba(229,221,208,0.55);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+.exp-category {
+  font-family: 'Josefin Slab', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--gold-dim);
+}
+.exp-category:not(:first-of-type) { margin-top: 2.5rem; }
+.exp-upcoming { color: var(--blue); font-style: italic; font-size: 0.84rem; }
+
 /* ── EXPERIENCE ── */
 .exp-item {
   display: grid;
@@ -263,6 +298,28 @@ section { padding: 5rem 3.5rem; }
   border: 1px solid rgba(107,159,212,0.22);
   color: var(--blue);
   font-family: 'Spectral', serif;
+}
+
+/* ── PROJECTS PLACEHOLDER ── */
+.proj-placeholder {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* ── SKILLS DIVIDER ── */
+.skills-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 3.5rem 0 2.5rem;
+}
+.skills-label {
+  font-family: 'Josefin Slab', serif;
+  font-size: 0.64rem;
+  letter-spacing: 0.32em;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 /* ── SKILLS ── */

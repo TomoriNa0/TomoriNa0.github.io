@@ -11,13 +11,14 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Dengyuhan Dai</a>
+  <a href="#hero" class="nav-logo">Dengyuhan Dai</a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">About</a></li>
-    <li><a href="experience.html">Experience</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="hound.html">The Hound</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#hound">The Hound</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -37,16 +38,15 @@
     <span class="tag blue">Computational Geometry</span>
     <span class="tag">Reinforcement Learning</span>
     <span class="tag">3D Vision</span>
-    <span class="tag">Topology Optimization</span>
   </div>
   <div class="hero-btns">
-    <a href="research.html" class="btn btn-primary">Research</a>
-    <a href="contact.html" class="btn btn-outline">Contact</a>
+    <a href="#research" class="btn btn-primary">Research</a>
+    <a href="#contact" class="btn btn-outline">Contact</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="alt-bg">
+<section id="about" class="alt-bg">
   <div class="sec-num">01 — About</div>
   <div class="about-grid">
     <div class="about-text">
@@ -77,7 +77,7 @@
         <span class="card-key">Current</span>
         <span class="card-val">UCLA Applied Math</span>
       </div>
-<div class="card-row">
+      <div class="card-row">
         <span class="card-key">Next</span>
         <span class="card-val">Imperial MSc AI '27</span>
       </div>
@@ -105,7 +105,243 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-num">02 — Experience</div>
+  <h2 class="sec-title">Experience</h2>
+
+  <div class="exp-category">Education</div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-logo-badge">UCLA</div>
+      <div class="exp-period">Sep 2022 – Jun 2026</div>
+      <div class="exp-location">Los Angeles, CA</div>
+    </div>
+    <div>
+      <div class="exp-org">University of California, Los Angeles</div>
+      <div class="exp-role">B.S. Applied Mathematics &nbsp;·&nbsp; GPA 3.87</div>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-logo-badge">ICL</div>
+      <div class="exp-period">Sep 2026 – Sep 2027</div>
+      <div class="exp-location">London, UK</div>
+    </div>
+    <div>
+      <div class="exp-org">Imperial College London</div>
+      <div class="exp-role">MSc Artificial Intelligence &nbsp;<span class="exp-upcoming">· Upcoming</span></div>
+    </div>
+  </div>
+
+  <div class="exp-category">Internship</div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-logo-badge">INRIA</div>
+      <div class="exp-period">Jul – Sep 2026</div>
+      <div class="exp-location">Sophia Antipolis, France</div>
+    </div>
+    <div>
+      <div class="exp-org">INRIA TITANE</div>
+      <div class="exp-role">Research Intern · Geometric Modeling &amp; Computer Vision</div>
+      <ul class="exp-bullets">
+        <li>Formulating large-scale 3D point cloud mesh reconstruction as a reinforcement learning problem, converting geometric reconstruction into sequential decision optimization.</li>
+        <li>Designing an RL-based framework to minimize quadric error (QEM) under complexity constraints, balancing reconstruction fidelity and mesh simplification.</li>
+        <li>Building GNN-based geometric feature modeling with graph attention networks (GAT); integrating DINOv2 for image-based local encoding under noise and non-uniform sampling.</li>
+        <li>Implementing Actor-Critic (A2C) policy optimization with decentralized multi-agent and centralized value function architecture for scalable decisions on large point clouds.</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="alt-bg">
+  <div class="sec-num">03 — Research</div>
+  <h2 class="sec-title">Research</h2>
+  <div class="proj-grid">
+
+    <div class="proj-card">
+      <div class="proj-type">Research · Ongoing</div>
+      <div class="proj-name">TSP Point Art</div>
+      <div class="proj-desc">
+        Image-to-TSP generative pipeline converting image signals into large-scale Euclidean TSP instances.
+        Density field construction, adaptive sampling (brightness / edge / multilayer),
+        Floyd–Steinberg dithering, and LLM-agent auto-configuration of solver parameters.
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Combinatorial Optimization</span>
+        <span class="proj-tag">Generative Art</span>
+        <span class="proj-tag">LLM Agent</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-type">Research · Algorithm Unrolling</div>
+      <div class="proj-name">Topology Optimization</div>
+      <div class="proj-desc">
+        Algorithm unrolling applied to structural topology optimization: iterative level-set updates
+        become differentiable network layers, retaining mathematical guarantees while enabling learned descent.
+        Full FEM pipeline with SIMP and Level-set frameworks, adjoint sensitivity analysis.
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Algorithm Unrolling</span>
+        <span class="proj-tag">FEM</span>
+        <span class="proj-tag">Level-set Methods</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-type">Research · Theory</div>
+      <div class="proj-name">Stochastic Processes &amp; ML</div>
+      <div class="proj-desc">
+        Guided reading on Markov chains, Poisson processes, and random walks (Prof. Vadim Markel, 2023).
+        Traced their appearance in modern ML: SGD as a discrete-time stochastic process,
+        Bernoulli dropout in attention mechanisms.
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Stochastic Processes</span>
+        <span class="proj-tag">Theory</span>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-type">Publication · 2023</div>
+      <div class="proj-name">Linear Regression Analysis</div>
+      <div class="proj-desc">
+        Published paper examining factors affecting linear regression model performance.
+        DOI: 10.1145/3653724.3653734
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">Statistics</span>
+        <span class="proj-tag">Published</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skills-divider"></div>
+
+  <div class="skills-label">Skills</div>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-name">Languages</div>
+      <ul class="skill-list">
+        <li>Python</li><li>C++</li><li>Java</li>
+        <li>MATLAB</li><li>Lua</li><li>LaTeX</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Frameworks</div>
+      <ul class="skill-list">
+        <li>PyTorch</li><li>TensorFlow</li><li>NumPy</li>
+        <li>SciPy</li><li>FastAPI</li><li>FreeFEM++</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Research Areas</div>
+      <ul class="skill-list">
+        <li>Algorithm Unrolling</li><li>Topology Optimization</li>
+        <li>Computational Geometry</li><li>Variational Methods</li>
+        <li>Reinforcement Learning</li><li>3D Point Clouds</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-name">Human Languages</div>
+      <ul class="skill-list">
+        <li>Chinese (Native)</li>
+        <li>English (TOEFL 111)</li>
+        <li>Japanese (JLPT N2)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-num">04 — Projects</div>
+  <h2 class="sec-title">Projects</h2>
+  <p class="proj-placeholder">Coming soon.</p>
+</section>
+
+<!-- THE HOUND -->
+<section id="hound" class="alt-bg">
+  <div class="sec-num">05 — Beyond the Equations</div>
+  <div class="hound-inner">
+    <div class="hound-img-wrap">
+      <img class="hound-img" src="assets/images/hound_cover.JPG" alt="The Hound — Namterre Luo">
+    </div>
+    <div>
+      <div class="hound-eyebrow">Original Novel</div>
+      <h2 class="hound-title"><em>The Hound</em> &nbsp;/&nbsp; 恶犬</h2>
+      <div class="hound-char">Namterre Luo &nbsp;·&nbsp; 骆南洮</div>
+      <div class="hound-body">
+        <p>
+          I write suspense fiction — <em>The Hound</em> is my current novel, tracing a physics student's cold, deliberate transformation into a criminal mind.
+        </p>
+        <p>
+          My favourite director is Shunji Iwai, whose films move between tenderness and quiet devastation with an unhurried grace I find irreplaceable.
+        </p>
+        <p>
+          In literature I return most often to Yukio Mishima — drawn to his obsession with beauty, discipline, and the fatal coherence of an ideal.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-num">06 — Contact</div>
+  <div class="contact-wrap">
+    <h2 class="contact-title">Let's <em>talk</em></h2>
+    <p class="contact-sub">Open to research discussions, collaborations, and interesting problems.</p>
+    <div class="contact-links">
+      <a href="mailto:ddyh717@g.ucla.edu" class="contact-link">ddyh717@g.ucla.edu</a>
+      <a href="https://github.com/TomoriNa0" class="contact-link">github / TomoriNa0</a>
+    </div>
+  </div>
+</section>
+
 <footer>© 2026 Dengyuhan Dai &nbsp;·&nbsp; Los Angeles → Sophia Antipolis → London</footer>
+
+<script>
+  // Scroll spy
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const spyObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => spyObs.observe(s));
+
+  // Exp-item fade-in
+  const expObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.exp-item').forEach(el => expObs.observe(el));
+
+  // Proj-card fade-in
+  const cardObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.proj-card').forEach((c, i) =>
+          setTimeout(() => c.classList.add('visible'), i * 85));
+        cardObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.05 });
+  const grid = document.querySelector('.proj-grid');
+  if (grid) cardObs.observe(grid);
+</script>
 
 </body>
 </html>
