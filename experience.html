@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience · Dengyuhan Dai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Slab:wght@400;600&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Dengyuhan Dai</a>
+  <ul class="nav-links">
+    <li><a href="index.html">About</a></li>
+    <li><a href="experience.html" class="active">Experience</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="hound.html">The Hound</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-content">
+<section>
+  <div class="sec-num">02 — Experience</div>
+  <h2 class="sec-title">Experience</h2>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-period">Jul – Sep 2026</div>
+      <div class="exp-location">Sophia Antipolis, France</div>
+    </div>
+    <div>
+      <div class="exp-org">INRIA TITANE</div>
+      <div class="exp-role">Research Intern · Geometric Modeling & Computer Vision</div>
+      <ul class="exp-bullets">
+        <li>Formulating large-scale 3D point cloud mesh reconstruction as a reinforcement learning problem, converting geometric reconstruction into sequential decision optimization.</li>
+        <li>Designing an RL-based framework to minimize quadric error (QEM) under complexity constraints, balancing reconstruction fidelity and mesh simplification.</li>
+        <li>Building GNN-based geometric feature modeling with graph attention networks (GAT); integrating DINOv2 for image-based local encoding under noise and non-uniform sampling.</li>
+        <li>Implementing Actor-Critic (A2C) policy optimization with decentralized multi-agent and centralized value function architecture for scalable decisions on large point clouds.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-period">Dec 2025 – Present</div>
+      <div class="exp-location">UCLA</div>
+    </div>
+    <div>
+      <div class="exp-org">TSP Point Art</div>
+      <div class="exp-role">Undergraduate Research · Advised by Prof. Jiayin Lu</div>
+      <ul class="exp-bullets">
+        <li>End-to-end image-to-TSP generative pipeline: density field construction, adaptive sampling, and single-stroke path generation realizing stipple art with mathematical structure.</li>
+        <li>LLM-agent configuration module for automatic sampling strategy and solver parameter selection. Recommended for SIAM undergraduate submission.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-period">Sep 2025 – Mar 2026</div>
+      <div class="exp-location">UCLA</div>
+    </div>
+    <div>
+      <div class="exp-org">Topology Optimization · ML4Science</div>
+      <div class="exp-role">Independent Research · Advised by Prof. Takayuki Yamada</div>
+      <ul class="exp-bullets">
+        <li>PDE-constrained structural topology optimization minimizing compliance under volume fraction constraints; implemented SIMP and Level-set frameworks with full FEM pipeline including adjoint sensitivity analysis.</li>
+        <li>Designed algorithm-unrolling differentiable architecture: iterative level-set update steps mapped to network layers, preserving optimization semantics while enabling learned, data-adaptive convergence.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-meta">
+      <div class="exp-period">Aug – Dec 2023</div>
+      <div class="exp-location">UCLA</div>
+    </div>
+    <div>
+      <div class="exp-org">Stochastic Processes · Guided Reading</div>
+      <div class="exp-role">Research Reading · Advised by Prof. Vadim Markel</div>
+      <ul class="exp-bullets">
+        <li>Systematic study of Markov chains, Poisson processes, and random walk models.</li>
+        <li>Explored connections to modern ML algorithms: SGD as a discrete-time stochastic process, Bernoulli dropout in attention mechanisms as controlled randomness.</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<footer>© 2026 Dengyuhan Dai &nbsp;·&nbsp; Los Angeles → Sophia Antipolis → London</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold: 0.08});
+  document.querySelectorAll('.exp-item').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
