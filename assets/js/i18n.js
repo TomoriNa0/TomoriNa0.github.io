@@ -86,7 +86,7 @@
 
       contact_sub: 'Open to research discussions, collaborations, and interesting problems.',
       footer_main: '© 2026 Dengyuhan Dai · Los Angeles → London',
-      footer_note: '「この世界は好都合に未完成だ。僕は知りたいんだ。」',
+      footer_note: '「この世界は好都合に未完成 僕は知りたいんだ。」',
 
       exp_page_inria_role: 'Research Intern · Geometric Modeling & Computer Vision',
       exp_page_inria_org: 'INRIA TITANE',
