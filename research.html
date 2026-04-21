@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research · Dengyuhan Dai</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Slab:wght@400;600&family=Monsieur+La+Doulaise&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Slab:wght@400;600&family=Monsieur+La+Doulaise&family=Noto+Serif+SC:wght@200;300;400&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=20260420b">
 </head>
 <body>
@@ -13,44 +13,42 @@
 <nav>
   <a href="index.html" class="nav-logo">Dengyuhan Dai</a>
   <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#research" class="active">Research</a></li>
-    <li><a href="index.html#projects">Projects</a></li>
-    <li><a href="index.html#hound">Writing</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+    <li><a href="index.html#experience" data-i18n="nav_experience">Experience</a></li>
+    <li><a href="index.html#research" class="active" data-i18n="nav_research">Research</a></li>
+    <li><a href="index.html#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="index.html#hound" data-i18n="nav_writing">Writing</a></li>
+    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
   </ul>
+  <div class="nav-actions">
+    <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+  </div>
 </nav>
 
 <div class="page-content">
 <section class="alt-bg">
-  <div class="sec-num">03 — Research & Projects</div>
+  <div class="sec-num" data-i18n="research_page_secnum">03 - Research & Projects</div>
   <h2 class="sec-title">Research</h2>
   <div class="proj-grid">
-
     <a class="proj-card" href="https://github.com/TomoriNa0/Math-Code-Art" target="_blank" rel="noopener">
-      <div class="proj-type">Research · Ongoing</div>
+      <div class="proj-type" data-i18n="research_type_tsp">Research · Ongoing</div>
       <div class="proj-name">TSP Point Art</div>
-      <div class="proj-desc">
-        Image-to-TSP generative pipeline converting image signals into large-scale Euclidean TSP instances.
-        Density field construction, adaptive sampling (brightness / edge / multilayer),
-        Floyd–Steinberg dithering, and LLM-agent auto-configuration of solver parameters.
+      <div class="proj-desc" data-i18n="research_desc_tsp">
+        Image-to-TSP generative pipeline converting image signals into large-scale Euclidean TSP instances. Density field construction, adaptive sampling (brightness / edge / multilayer), Floyd-Steinberg dithering, and LLM-agent auto-configuration of solver parameters.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Combinatorial Optimization</span>
         <span class="proj-tag">Generative Art</span>
         <span class="proj-tag">LLM Agent</span>
       </div>
-      <div class="proj-card-link-hint">View Repo</div>
+      <div class="proj-card-link-hint" data-i18n="research_link_repo">View Repo</div>
     </a>
 
     <div class="proj-card">
       <div class="proj-type">Research · Algorithm Unrolling</div>
       <div class="proj-name">Topology Optimization</div>
-      <div class="proj-desc">
-        Algorithm unrolling applied to structural topology optimization: iterative level-set updates
-        become differentiable network layers, retaining mathematical guarantees while enabling learned descent.
-        Full FEM pipeline with SIMP and Level-set frameworks, adjoint sensitivity analysis.
+      <div class="proj-desc" data-i18n="research_desc_topology">
+        Algorithm unrolling applied to structural topology optimization: iterative level-set updates become differentiable network layers, retaining mathematical guarantees while enabling learned descent. Full FEM pipeline with SIMP and Level-set frameworks, adjoint sensitivity analysis.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Algorithm Unrolling</span>
@@ -60,12 +58,10 @@
     </div>
 
     <div class="proj-card">
-      <div class="proj-type">Research · Theory</div>
-      <div class="proj-name">Stochastic Processes & ML</div>
-      <div class="proj-desc">
-        Guided reading on Markov chains, Poisson processes, and random walks (Prof. Vadim Markel, 2023).
-        Traced their appearance in modern ML: SGD as a discrete-time stochastic process,
-        Bernoulli dropout in attention mechanisms.
+      <div class="proj-type" data-i18n="research_type_theory">Research · Theory</div>
+      <div class="proj-name" data-i18n="research_name_stochastic">Stochastic Processes &amp; ML</div>
+      <div class="proj-desc" data-i18n="research_desc_theory">
+        Guided reading on Markov chains, Poisson processes, and random walks (Prof. Vadim Markel, 2023). Traced their appearance in modern ML: SGD as a discrete-time stochastic process, Bernoulli dropout in attention mechanisms.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Stochastic Processes</span>
@@ -74,28 +70,24 @@
     </div>
 
     <a class="proj-card" href="https://github.com/TomoriNa0" target="_blank" rel="noopener">
-      <div class="proj-type">Project · Bayesian Systems</div>
+      <div class="proj-type" data-i18n="project_type_movie">Project · Bayesian Systems</div>
       <div class="proj-name">Movie Estimator</div>
-      <div class="proj-desc">
-        Bayesian estimation system for movie viewing counts. FastAPI backend, session state machines,
-        Beta-Binomial Bayesian correction, weighted sampling from Top-250 pool,
-        and LLM semantic correction layer.
+      <div class="proj-desc" data-i18n="project_desc_movie">
+        Bayesian estimation system for movie viewing counts. FastAPI backend, session state machines, Beta-Binomial Bayesian correction, weighted sampling from Top-250 pool, and LLM semantic correction layer.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Bayesian Inference</span>
         <span class="proj-tag">FastAPI</span>
         <span class="proj-tag">LLM Integration</span>
       </div>
-      <div class="proj-card-link-hint">View Repo</div>
+      <div class="proj-card-link-hint" data-i18n="research_page_movie_link">View Repo</div>
     </a>
 
     <div class="proj-card">
-      <div class="proj-type">Project · Dynamical Systems</div>
+      <div class="proj-type" data-i18n="project_type_population">Project · Dynamical Systems</div>
       <div class="proj-name">Population Dynamics Modeling</div>
-      <div class="proj-desc">
-        Lotka–Volterra system analysis with real ecological time-series data. Equilibrium analysis,
-        linear stability, phase portraits, parameter estimation via numerical integration,
-        and model extension for carrying capacity, seasonality, and functional responses.
+      <div class="proj-desc" data-i18n="project_desc_population">
+        Lotka-Volterra system analysis with real ecological time-series data. Equilibrium analysis, linear stability, phase portraits, parameter estimation via numerical integration, and model extension for carrying capacity, seasonality, and functional responses.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Dynamical Systems</span>
@@ -105,41 +97,39 @@
     </div>
 
     <div class="proj-card">
-      <div class="proj-type">Publication · 2023</div>
+      <div class="proj-type" data-i18n="research_type_pub">Publication · 2023</div>
       <div class="proj-name">Linear Regression Analysis</div>
-      <div class="proj-desc">
-        Published paper examining factors affecting linear regression model performance.
-        DOI: 10.1145/3653724.3653734
+      <div class="proj-desc" data-i18n="research_desc_pub">
+        Published paper examining factors affecting linear regression model performance. DOI: 10.1145/3653724.3653734
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Statistics</span>
         <span class="proj-tag">Published</span>
       </div>
     </div>
-
   </div>
 </section>
 
 <section>
-  <div class="sec-num">04 — Skills</div>
+  <div class="sec-num">04 · Skills</div>
   <h2 class="sec-title">Skills</h2>
   <div class="skills-grid">
     <div class="skill-group">
-      <div class="skill-group-name">Languages</div>
+      <div class="skill-group-name" data-i18n="skill_group_languages">Languages</div>
       <ul class="skill-list">
         <li>Python</li><li>C++</li><li>Java</li>
         <li>MATLAB</li><li>Lua</li><li>LaTeX</li>
       </ul>
     </div>
     <div class="skill-group">
-      <div class="skill-group-name">Frameworks</div>
+      <div class="skill-group-name" data-i18n="skill_group_frameworks">Frameworks</div>
       <ul class="skill-list">
         <li>PyTorch</li><li>TensorFlow</li><li>NumPy</li>
         <li>SciPy</li><li>FastAPI</li><li>FreeFEM++</li>
       </ul>
     </div>
     <div class="skill-group">
-      <div class="skill-group-name">Research Areas</div>
+      <div class="skill-group-name" data-i18n="skill_group_areas">Research Areas</div>
       <ul class="skill-list">
         <li>Algorithm Unrolling</li><li>Topology Optimization</li>
         <li>Computational Geometry</li><li>Variational Methods</li>
@@ -147,19 +137,20 @@
       </ul>
     </div>
     <div class="skill-group">
-      <div class="skill-group-name">Human Languages</div>
+      <div class="skill-group-name" data-i18n="skill_group_human">Human Languages</div>
       <ul class="skill-list">
-        <li>Chinese (Native)</li>
-        <li>English (TOEFL 111)</li>
-        <li>Japanese (JLPT N2)</li>
+        <li data-i18n="research_page_skills_chinese">Chinese (Native)</li>
+        <li data-i18n="research_page_skills_english">English (TOEFL 111)</li>
+        <li data-i18n="research_page_skills_japanese">Japanese (JLPT N2)</li>
       </ul>
     </div>
   </div>
 </section>
 </div>
 
-<footer>© 2026 Dengyuhan Dai &nbsp;·&nbsp; Los Angeles → Sophia Antipolis → London</footer>
+<footer data-i18n="footer_main">© 2026 Dengyuhan Dai · Los Angeles → Sophia Antipolis → London</footer>
 
+<script src="assets/js/i18n.js"></script>
 <script>
   const cardObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
@@ -169,7 +160,7 @@
         cardObs.unobserve(e.target);
       }
     });
-  }, {threshold: 0.05});
+  }, { threshold: 0.05 });
   const grid = document.querySelector('.proj-grid');
   if (grid) cardObs.observe(grid);
 </script>

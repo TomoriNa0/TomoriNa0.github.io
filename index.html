@@ -13,39 +13,39 @@
 <nav>
   <a href="#hero" class="nav-logo">Dengyuhan Dai</a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#hound">Writing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+    <li><a href="#research" data-i18n="nav_research">Research</a></li>
+    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="#hound" data-i18n="nav_writing">Writing</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
   </ul>
+  <div class="nav-actions">
+    <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+  </div>
   <div class="nav-globe" id="nav-globe"></div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-layout">
     <div class="hero-text">
-      <div class="hero-label">Applied Mathematics · Machine Learning · Computational Geometry</div>
+      <div class="hero-label" data-i18n="hero_label">Applied Mathematics · Machine Learning · Computational Geometry</div>
       <h1 class="hero-name">Dengyuhan <em>Dai</em></h1>
       <div class="hero-name-cn">戴 邓语涵</div>
-      <p class="hero-sub">Optimization, structure, and the mathematics behind learning.</p>
-      <p class="hero-desc">
-        I work at the boundary of mathematical theory and machine learning — studying how
-        iterative algorithms become differentiable architectures, and how geometry gives
-        structure to data. UCLA Applied Math '26 · Incoming INRIA Researcher · Imperial MSc AI '27.
+      <p class="hero-sub" data-i18n="hero_sub">Optimization, structure, and the mathematics behind learning.</p>
+      <p class="hero-desc" data-i18n="hero_desc">
+        I work at the boundary of mathematical theory and machine learning - studying how iterative algorithms become differentiable architectures, and how geometry gives structure to data. UCLA Applied Math '26 · Incoming INRIA Researcher · Imperial MSc AI '27.
       </p>
       <div class="hero-tags">
-        <span class="tag blue">Explainable ML</span>
-        <span class="tag blue">Algorithm Unrolling</span>
-        <span class="tag blue">Computational Geometry</span>
-        <span class="tag">Reinforcement Learning</span>
-        <span class="tag">3D Vision</span>
+        <span class="tag blue" data-i18n="hero_tag_explainable">Explainable ML</span>
+        <span class="tag blue" data-i18n="hero_tag_unrolling">Algorithm Unrolling</span>
+        <span class="tag blue" data-i18n="hero_tag_geometry">Computational Geometry</span>
+        <span class="tag" data-i18n="hero_tag_rl">Reinforcement Learning</span>
+        <span class="tag" data-i18n="hero_tag_vision">3D Vision</span>
       </div>
       <div class="hero-btns">
-        <a href="#research" class="btn btn-primary">Research</a>
-        <a href="#contact" class="btn btn-outline">Contact</a>
+        <a href="#research" class="btn btn-primary" data-i18n="hero_btn_research">Research</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Contact</a>
       </div>
     </div>
     <div class="hero-photo-wrap">
@@ -54,150 +54,133 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="alt-bg">
-  <div class="sec-num reveal">01 — About</div>
+  <div class="sec-num reveal">01 · About</div>
   <div class="about-grid">
     <div class="about-text reveal">
       <h2 class="sec-title">About</h2>
-      <p>
-        I'm a final-year Applied Mathematics student at UCLA,
-        with a background in analysis, convex optimization, numerical methods, and algorithms.
-        My core interest is understanding machine learning from the inside — not treating
-        models as black boxes, but tracing how their behavior follows from mathematical structure.
+      <p data-i18n="about_p1">
+        I'm a final-year Applied Mathematics student at UCLA, with a background in analysis, convex optimization, numerical methods, and algorithms. My core interest is understanding machine learning from the inside - not treating models as black boxes, but tracing how their behavior follows from mathematical structure.
       </p>
-      <p>
-        This summer I join <strong>INRIA TITANE</strong> (Sophia Antipolis) as a research intern,
-        working on variational mesh reconstruction from 3D point clouds using reinforcement learning
-        and graph neural networks, supervised by Pierre Alliez.
+      <p data-i18n="about_p2_html" data-i18n-mode="html">
+        This summer I join <strong>INRIA TITANE</strong> (Sophia Antipolis) as a research intern, working on variational mesh reconstruction from 3D point clouds using reinforcement learning and graph neural networks, supervised by Pierre Alliez.
       </p>
-      <p>
-        In autumn I begin an <strong>MSc in AI at Imperial College London</strong>, where I plan to
-        deepen work on principled model understanding — connecting optimization theory to
-        interpretable, reliable learning systems.
+      <p data-i18n="about_p3_html" data-i18n-mode="html">
+        In autumn I begin an <strong>MSc in AI at Imperial College London</strong>, where I plan to deepen work on principled model understanding - connecting optimization theory to interpretable, reliable learning systems.
       </p>
-      <p>
-        Outside of research: I write suspense fiction, play souls-like games,
-        and hold a JLPT N2 in Japanese.
+      <p data-i18n="about_p4">
+        Outside of research: I write suspense fiction, play souls-like games, and hold a JLPT N2 in Japanese.
       </p>
     </div>
     <div class="about-card reveal">
       <div class="card-row">
-        <span class="card-key">Current</span>
-        <span class="card-val">UCLA Applied Math</span>
+        <span class="card-key" data-i18n="about_card_current">Current</span>
+        <span class="card-val" data-i18n="about_card_current_val">UCLA Applied Math</span>
       </div>
       <div class="card-row">
-        <span class="card-key">Next</span>
-        <span class="card-val">Imperial MSc AI '27</span>
+        <span class="card-key" data-i18n="about_card_next">Next</span>
+        <span class="card-val" data-i18n="about_card_next_val">Imperial MSc AI '27</span>
       </div>
       <div class="card-row">
-        <span class="card-key">Summer</span>
-        <span class="card-val">INRIA TITANE</span>
+        <span class="card-key" data-i18n="about_card_summer">Summer</span>
+        <span class="card-val" data-i18n="about_card_summer_val">INRIA TITANE</span>
       </div>
       <div class="card-row">
-        <span class="card-key">Location</span>
-        <span class="card-val">LA → London</span>
+        <span class="card-key" data-i18n="about_card_location">Location</span>
+        <span class="card-val" data-i18n="about_card_location_val">LA → London</span>
       </div>
       <div class="card-row">
-        <span class="card-key">GitHub</span>
+        <span class="card-key" data-i18n="about_card_github">GitHub</span>
         <span class="card-val"><a href="https://github.com/TomoriNa0">TomoriNa0</a></span>
       </div>
       <div class="card-row">
-        <span class="card-key">Email</span>
+        <span class="card-key" data-i18n="about_card_email">Email</span>
         <span class="card-val"><a href="mailto:ddyh717@g.ucla.edu">ddyh717@g.ucla.edu</a></span>
       </div>
       <div class="card-row">
-        <span class="card-key">Languages</span>
-        <span class="card-val">EN · ZH · JP</span>
+        <span class="card-key" data-i18n="about_card_languages">Languages</span>
+        <span class="card-val" data-i18n="about_card_languages_val">EN · ZH · JP</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
-  <div class="sec-num reveal">02 — Experience</div>
+  <div class="sec-num reveal">02 · Experience</div>
   <h2 class="sec-title reveal">Experience</h2>
 
-  <div class="exp-category reveal">Education</div>
+  <div class="exp-category reveal" data-i18n="exp_cat_education">Education</div>
 
   <div class="exp-item">
     <div class="exp-meta">
       <img class="exp-logo-img" src="assets/images/logo-ucla.png" alt="UCLA">
-      <div class="exp-period">Sep 2022 – Jun 2026</div>
+      <div class="exp-period">Sep 2022 - Jun 2026</div>
       <div class="exp-location">Los Angeles, CA</div>
     </div>
     <div>
-      <div class="exp-org">University of California, Los Angeles</div>
-      <div class="exp-role">B.S. Applied Mathematics</div>
-      <div class="exp-courses">
+      <div class="exp-org" data-i18n="exp_ucla_org">University of California, Los Angeles</div>
+      <div class="exp-role" data-i18n="exp_ucla_role">B.S. Applied Mathematics</div>
+      <div class="exp-courses" data-i18n="exp_ucla_courses_html" data-i18n-mode="html">
         <span class="exp-courses-label">Key Courses &nbsp;·&nbsp; </span>Algorithms &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; ODE &nbsp;·&nbsp; Real Analysis &nbsp;·&nbsp; Numerical Methods
       </div>
     </div>
   </div>
 
-  <div class="exp-category reveal">Internship</div>
+  <div class="exp-category reveal" data-i18n="exp_cat_internship">Internship</div>
 
   <div class="exp-item">
     <div class="exp-meta">
       <img class="exp-logo-img" src="assets/images/logo-inria.png" alt="INRIA">
-      <div class="exp-period">Jul – Sep 2026</div>
+      <div class="exp-period">Jul - Sep 2026</div>
       <div class="exp-location">Sophia Antipolis, France</div>
     </div>
     <div>
       <div class="exp-org">INRIA TITANE</div>
-      <div class="exp-role">Research Intern · Geometric Modeling &amp; Computer Vision</div>
-      <div class="exp-courses">
+      <div class="exp-role" data-i18n="exp_inria_role">Research Intern · Geometric Modeling &amp; Computer Vision</div>
+      <div class="exp-courses" data-i18n="exp_inria_work_html" data-i18n-mode="html">
         <span class="exp-courses-label">Key Work &nbsp;·&nbsp; </span>RL-based 3D mesh reconstruction &nbsp;·&nbsp; GNN + GAT geometric feature modeling &nbsp;·&nbsp; DINOv2 image encoding &nbsp;·&nbsp; A2C multi-agent policy optimization
       </div>
     </div>
   </div>
 
-  <div class="exp-category reveal">Upcoming</div>
+  <div class="exp-category reveal" data-i18n="exp_cat_upcoming">Upcoming</div>
 
   <div class="exp-item">
     <div class="exp-meta">
       <img class="exp-logo-img" src="assets/images/logo-icl.png" alt="Imperial College London">
-      <div class="exp-period">Sep 2026 – Sep 2027</div>
+      <div class="exp-period">Sep 2026 - Sep 2027</div>
       <div class="exp-location">London, UK</div>
     </div>
     <div>
-      <div class="exp-org">Imperial College London</div>
-      <div class="exp-role">MSc Artificial Intelligence</div>
+      <div class="exp-org" data-i18n="exp_icl_org">Imperial College London</div>
+      <div class="exp-role" data-i18n="exp_icl_role">MSc Artificial Intelligence</div>
     </div>
   </div>
-
 </section>
 
-<!-- RESEARCH -->
 <section id="research" class="alt-bg">
-  <div class="sec-num reveal">03 — Research</div>
+  <div class="sec-num reveal">03 · Research</div>
   <h2 class="sec-title reveal">Research</h2>
   <div class="proj-grid">
-
     <a class="proj-card" href="https://github.com/TomoriNa0/Math-Code-Art" target="_blank" rel="noopener">
-      <div class="proj-type">Research · Ongoing</div>
+      <div class="proj-type" data-i18n="research_type_tsp">Research · Ongoing</div>
       <div class="proj-name">TSP Point Art</div>
-      <div class="proj-desc">
-        Image-to-TSP generative pipeline converting image signals into large-scale Euclidean TSP instances.
-        Density field construction, adaptive sampling (brightness / edge / multilayer),
-        Floyd–Steinberg dithering, and LLM-agent auto-configuration of solver parameters.
+      <div class="proj-desc" data-i18n="research_desc_tsp">
+        Image-to-TSP generative pipeline converting image signals into large-scale Euclidean TSP instances. Density field construction, adaptive sampling (brightness / edge / multilayer), Floyd-Steinberg dithering, and LLM-agent auto-configuration of solver parameters.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Combinatorial Optimization</span>
         <span class="proj-tag">Generative Art</span>
         <span class="proj-tag">LLM Agent</span>
       </div>
-      <div class="proj-card-link-hint">View Repo</div>
+      <div class="proj-card-link-hint" data-i18n="research_link_repo">View Repo</div>
     </a>
 
     <div class="proj-card">
       <div class="proj-type">Research · Algorithm Unrolling</div>
       <div class="proj-name">Topology Optimization</div>
-      <div class="proj-desc">
-        Algorithm unrolling applied to structural topology optimization: iterative level-set updates
-        become differentiable network layers, retaining mathematical guarantees while enabling learned descent.
-        Full FEM pipeline with SIMP and Level-set frameworks, adjoint sensitivity analysis.
+      <div class="proj-desc" data-i18n="research_desc_topology">
+        Algorithm unrolling applied to structural topology optimization: iterative level-set updates become differentiable network layers, retaining mathematical guarantees while enabling learned descent. Full FEM pipeline with SIMP and Level-set frameworks, adjoint sensitivity analysis.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Algorithm Unrolling</span>
@@ -207,12 +190,10 @@
     </div>
 
     <div class="proj-card">
-      <div class="proj-type">Research · Theory</div>
-      <div class="proj-name">Stochastic Processes &amp; ML</div>
-      <div class="proj-desc">
-        Guided reading on Markov chains, Poisson processes, and random walks (Prof. Vadim Markel, 2023).
-        Traced their appearance in modern ML: SGD as a discrete-time stochastic process,
-        Bernoulli dropout in attention mechanisms.
+      <div class="proj-type" data-i18n="research_type_theory">Research · Theory</div>
+      <div class="proj-name" data-i18n="research_name_stochastic">Stochastic Processes &amp; ML</div>
+      <div class="proj-desc" data-i18n="research_desc_theory">
+        Guided reading on Markov chains, Poisson processes, and random walks (Prof. Vadim Markel, 2023). Traced their appearance in modern ML: SGD as a discrete-time stochastic process, Bernoulli dropout in attention mechanisms.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Stochastic Processes</span>
@@ -221,39 +202,37 @@
     </div>
 
     <div class="proj-card">
-      <div class="proj-type">Publication · 2023</div>
+      <div class="proj-type" data-i18n="research_type_pub">Publication · 2023</div>
       <div class="proj-name">Linear Regression Analysis</div>
-      <div class="proj-desc">
-        Published paper examining factors affecting linear regression model performance.
-        DOI: 10.1145/3653724.3653734
+      <div class="proj-desc" data-i18n="research_desc_pub">
+        Published paper examining factors affecting linear regression model performance. DOI: 10.1145/3653724.3653734
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Statistics</span>
         <span class="proj-tag">Published</span>
       </div>
     </div>
-
   </div>
 
   <div class="skills-divider reveal"></div>
-  <div class="skills-label reveal">Skills</div>
+  <div class="skills-label reveal" data-i18n="skills_label">Skills</div>
   <div class="skills-grid">
     <div class="skill-group reveal">
-      <div class="skill-group-name">Languages</div>
+      <div class="skill-group-name" data-i18n="skill_group_languages">Languages</div>
       <ul class="skill-list">
         <li>Python</li><li>C++</li><li>Java</li>
         <li>MATLAB</li><li>Lua</li><li>LaTeX</li>
       </ul>
     </div>
     <div class="skill-group reveal">
-      <div class="skill-group-name">Frameworks</div>
+      <div class="skill-group-name" data-i18n="skill_group_frameworks">Frameworks</div>
       <ul class="skill-list">
         <li>PyTorch</li><li>TensorFlow</li><li>NumPy</li>
         <li>SciPy</li><li>FastAPI</li><li>FreeFEM++</li>
       </ul>
     </div>
     <div class="skill-group reveal">
-      <div class="skill-group-name">Research Areas</div>
+      <div class="skill-group-name" data-i18n="skill_group_areas">Research Areas</div>
       <ul class="skill-list">
         <li>Algorithm Unrolling</li><li>Topology Optimization</li>
         <li>Computational Geometry</li><li>Variational Methods</li>
@@ -261,23 +240,20 @@
       </ul>
     </div>
     <div class="skill-group reveal">
-      <div class="skill-group-name">Human Languages</div>
+      <div class="skill-group-name" data-i18n="skill_group_human">Human Languages</div>
       <ul class="skill-list">
-        <li>Chinese</li>
-        <li>English</li>
-        <li>Japanese</li>
+        <li data-i18n="human_lang_chinese">Chinese</li>
+        <li data-i18n="human_lang_english">English</li>
+        <li data-i18n="human_lang_japanese">Japanese</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
-  <div class="sec-num reveal">04 — Projects</div>
+  <div class="sec-num reveal">04 · Projects</div>
   <h2 class="sec-title reveal">Projects</h2>
   <div class="proj-grid">
-
-    <!-- Movie Estimator — side video + clickable -->
     <a class="proj-card proj-card-video-side" href="https://github.com/TomoriNa0" target="_blank" rel="noopener">
       <div class="proj-video-side">
         <video autoplay muted loop playsinline>
@@ -286,78 +262,70 @@
         <div class="proj-video-side-overlay"></div>
       </div>
       <div class="proj-card-body">
-        <div class="proj-type">Project · Bayesian Systems</div>
+        <div class="proj-type" data-i18n="project_type_movie">Project · Bayesian Systems</div>
         <div class="proj-name">Movie Estimator</div>
-        <div class="proj-desc">
-          Bayesian estimation system for movie viewing counts. FastAPI backend, session state machines,
-          Beta-Binomial Bayesian correction, weighted sampling from Top-250 pool,
-          and LLM semantic correction layer.
+        <div class="proj-desc" data-i18n="project_desc_movie">
+          Bayesian estimation system for movie viewing counts. FastAPI backend, session state machines, Beta-Binomial Bayesian correction, weighted sampling from Top-250 pool, and LLM semantic correction layer.
         </div>
         <div class="proj-tags">
           <span class="proj-tag">Bayesian Inference</span>
           <span class="proj-tag">FastAPI</span>
           <span class="proj-tag">LLM Integration</span>
         </div>
-        <div class="proj-card-link-hint">View Repo</div>
+        <div class="proj-card-link-hint" data-i18n="research_link_repo">View Repo</div>
       </div>
     </a>
 
-    <!-- Population Dynamics — PDF link -->
     <div class="proj-card">
-      <div class="proj-type">Project · Dynamical Systems</div>
+      <div class="proj-type" data-i18n="project_type_population">Project · Dynamical Systems</div>
       <div class="proj-name">Population Dynamics Modeling</div>
-      <div class="proj-desc">
-        Lotka–Volterra system analysis with real ecological time-series data. Equilibrium analysis,
-        linear stability, phase portraits, parameter estimation via numerical integration,
-        and model extension for carrying capacity, seasonality, and functional responses.
+      <div class="proj-desc" data-i18n="project_desc_population">
+        Lotka-Volterra system analysis with real ecological time-series data. Equilibrium analysis, linear stability, phase portraits, parameter estimation via numerical integration, and model extension for carrying capacity, seasonality, and functional responses.
       </div>
       <div class="proj-tags">
         <span class="proj-tag">Dynamical Systems</span>
         <span class="proj-tag">Numerical Methods</span>
         <span class="proj-tag">MATLAB</span>
       </div>
-      <a href="assets/docs/population-dynamics.pdf" target="_blank" class="proj-pdf-link">View Report →</a>
+      <a href="assets/docs/population-dynamics.pdf" target="_blank" class="proj-pdf-link" data-i18n="project_view_report">View Report</a>
     </div>
-
   </div>
 </section>
 
-<!-- THE HOUND -->
 <section id="hound" class="alt-bg">
-  <div class="sec-num reveal">05 — Beyond the Equations</div>
+  <div class="sec-num reveal">05 · Beyond the Equations</div>
   <div class="hound-inner reveal">
     <div class="hound-img-wrap">
-      <img class="hound-img" src="assets/images/hound_cover.JPG" alt="The Hound — Namterre Luo">
-      <div class="hound-img-credit">Art by Dollllls</div>
+      <img class="hound-img" src="assets/images/hound_cover.JPG" alt="The Hound - Namterre Luo">
+      <div class="hound-img-credit" data-i18n="hound_img_credit">Art by Dollllls</div>
     </div>
     <div>
-      <div class="hound-eyebrow">Original Novel</div>
+      <div class="hound-eyebrow" data-i18n="hound_eyebrow">Original Novel</div>
       <h2 class="hound-title"><em>The Hound</em><span class="hound-title-red"> &nbsp;/&nbsp; 恶犬</span></h2>
-      <div class="hound-char">Namterre Luo &nbsp;·&nbsp; 骆南洮</div>
+      <div class="hound-char" data-i18n="hound_char">Namterre Luo · 罗楠特</div>
       <div class="hound-body">
         <div class="hound-interests">
-          <div class="hound-insp-label">In Film &amp; Literature</div>
-          <p class="hound-aside-text">My favourite director is Shunji Iwai, whose films move between tenderness and quiet devastation with an unhurried grace I find irreplaceable.</p>
-          <p class="hound-aside-text">In literature I return most often to Yukio Mishima — drawn to his obsession with beauty, discipline, and the fatal coherence of an ideal.</p>
+          <div class="hound-insp-label" data-i18n="hound_film_label">In Film &amp; Literature</div>
+          <p class="hound-aside-text" data-i18n="hound_film_p1">My favourite director is Shunji Iwai, whose films move between tenderness and quiet devastation with an unhurried grace I find irreplaceable.</p>
+          <p class="hound-aside-text" data-i18n="hound_film_p2">In literature I return most often to Yukio Mishima - drawn to his obsession with beauty, discipline, and the fatal coherence of an ideal.</p>
         </div>
-        <p>
-          <em>The Hound</em> is my current novel-in-progress — a suspense work written with classical restraint: slow-burn tension, precise prose, and psychological depth over spectacle. It is a novel about the architecture of a criminal mind, not born of passion or madness, but of cold structural logic applied to human behavior.
+        <p data-i18n="hound_body_main" data-i18n-mode="html">
+          <em>The Hound</em> is my current novel-in-progress - a suspense work written with classical restraint: slow-burn tension, precise prose, and psychological depth over spectacle. It is a novel about the architecture of a criminal mind, not born of passion or madness, but of cold structural logic applied to human behavior.
         </p>
         <div class="hound-char-card">
-          <div class="hound-insp-label">Namterre Luo &nbsp;·&nbsp; 骆南洮</div>
-          <p class="hound-aside-text">
-            A physics student with no emotional affect and exceptional intelligence. <em>The Hound</em> follows her slow, deliberate transformation — how someone who feels nothing comes to act with total, precise intention. She does not break rules out of rage or trauma; she simply decides, with perfect clarity, that they do not apply to her, and then acts accordingly.
+          <div class="hound-insp-label" data-i18n="hound_char_label">Namterre Luo · 罗楠特</div>
+          <p class="hound-aside-text" data-i18n="hound_char_desc" data-i18n-mode="html">
+            A physics student with no emotional affect and exceptional intelligence. <em>The Hound</em> follows her slow, deliberate transformation - how someone who feels nothing comes to act with total, precise intention. She does not break rules out of rage or trauma; she simply decides, with perfect clarity, that they do not apply to her, and then acts accordingly.
           </p>
         </div>
       </div>
     </div>
-    <p class="hound-epigraph">"The evil that men do lives after them; The good is oft interred with their bones."</p>
+    <p class="hound-epigraph" data-i18n="hound_quote">"The evil that men do lives after them; The good is oft interred with their bones."</p>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-  <div class="sec-num reveal">06 — Contact</div>
+  <div class="sec-num reveal">06 · Contact</div>
   <div class="contact-wrap reveal">
     <div class="contact-links">
       <a href="mailto:ddyh717@g.ucla.edu" class="contact-link">ddyh717@g.ucla.edu</a>
@@ -367,12 +335,12 @@
 </section>
 
 <footer>
-  <div>© 2026 Dengyuhan Dai &nbsp;·&nbsp; Los Angeles → London</div>
-  <div class="footer-note">「この世界は好都合に未完成 僕は知りたいんだ。」</div>
+  <div data-i18n="footer_main">© 2026 Dengyuhan Dai · Los Angeles → London</div>
+  <div class="footer-note" data-i18n="footer_note">「この世界は好都合に未完成だ。僕は知りたいんだ。」</div>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 <script>
-  // Globe nav indicator
   const navGlobe = document.getElementById('nav-globe');
   const navEl = document.querySelector('nav');
   function updateGlobe() {
@@ -388,7 +356,6 @@
   }
   window.addEventListener('load', updateGlobe);
 
-  // Globe rotation synced to scroll
   let ticking = false;
   window.addEventListener('scroll', () => {
     if (!ticking) {
@@ -400,7 +367,6 @@
     }
   });
 
-  // Scroll spy
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
   const spyObs = new IntersectionObserver(entries => {
@@ -408,19 +374,22 @@
       if (entry.isIntersecting) {
         navLinks.forEach(a => a.classList.remove('active'));
         const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
-        if (link) { link.classList.add('active'); updateGlobe(); }
+        if (link) {
+          link.classList.add('active');
+          updateGlobe();
+        }
       }
     });
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach(s => spyObs.observe(s));
 
-  // Exp-item fade-in
   const expObs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
   }, { threshold: 0.08 });
   document.querySelectorAll('.exp-item').forEach(el => expObs.observe(el));
 
-  // Proj-card fade-in
   const cardObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -432,7 +401,6 @@
   }, { threshold: 0.05 });
   document.querySelectorAll('.proj-grid').forEach(g => cardObs.observe(g));
 
-  // Reveal on scroll
   const revealObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -442,7 +410,6 @@
     });
   }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-  // Stagger skill-groups
   document.querySelectorAll('.skill-group.reveal').forEach((el, i) => {
     el.style.transitionDelay = (i * 0.09) + 's';
   });

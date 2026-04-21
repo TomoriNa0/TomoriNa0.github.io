@@ -88,7 +88,14 @@ nav::after {
   text-decoration: none;
   text-transform: uppercase;
 }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 .nav-links a {
   font-family: 'Spectral', serif;
   font-size: 1rem;
@@ -100,6 +107,33 @@ nav::after {
 .nav-links a.active {
   color: var(--blue);
   text-shadow: 0 0 10px rgba(248,179,127,0.24);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+.lang-toggle {
+  border: 1px solid rgba(254,255,239,0.18);
+  background: rgba(14,15,17,0.72);
+  color: var(--muted);
+  font-family: 'Josefin Slab', 'Noto Serif SC', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.48rem 0.8rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, text-shadow 0.2s;
+}
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: rgba(248,179,127,0.32);
+  text-shadow: 0 0 8px rgba(248,179,127,0.2);
+}
+.lang-toggle.is-zh {
+  color: var(--blue);
+  border-color: rgba(248,179,127,0.26);
 }
 
 /* ── PAGE WRAPPER ── */
@@ -833,6 +867,8 @@ footer {
   nav { padding: 1rem 1.5rem; }
   .nav-links { display: none; }
   .nav-globe { display: none; }
+  .nav-actions { gap: 0.5rem; }
+  .lang-toggle { padding: 0.42rem 0.7rem; font-size: 0.68rem; }
   nav::after { mask-image: none; -webkit-mask-image: none; }
   #hero { padding: 5.5rem 1.5rem 3rem; align-items: flex-start; }
   section { padding: 5.5rem 1.5rem 3rem; }

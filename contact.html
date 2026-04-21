@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact · Dengyuhan Dai</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Slab:wght@400;600&family=Monsieur+La+Doulaise&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Fraunces:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Slab:wght@400;600&family=Monsieur+La+Doulaise&family=Noto+Serif+SC:wght@200;300;400&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=20260420b">
 </head>
 <body>
@@ -13,21 +13,24 @@
 <nav>
   <a href="index.html" class="nav-logo">Dengyuhan Dai</a>
   <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#research">Research</a></li>
-    <li><a href="index.html#projects">Projects</a></li>
-    <li><a href="index.html#hound">Writing</a></li>
-    <li><a href="index.html#contact" class="active">Contact</a></li>
+    <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+    <li><a href="index.html#experience" data-i18n="nav_experience">Experience</a></li>
+    <li><a href="index.html#research" data-i18n="nav_research">Research</a></li>
+    <li><a href="index.html#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="index.html#hound" data-i18n="nav_writing">Writing</a></li>
+    <li><a href="index.html#contact" class="active" data-i18n="nav_contact">Contact</a></li>
   </ul>
+  <div class="nav-actions">
+    <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+  </div>
 </nav>
 
 <div class="page-content">
 <section class="alt-bg" style="min-height: calc(100vh - 130px); display:flex; flex-direction:column; justify-content:center;">
-  <div class="sec-num" style="max-width:180px;">06 — Contact</div>
+  <div class="sec-num" style="max-width:180px;">06 · Contact</div>
   <div class="contact-wrap">
     <h2 class="contact-title">Contact</h2>
-    <p class="contact-sub">Open to research discussions, collaborations, and interesting problems.</p>
+    <p class="contact-sub" data-i18n="contact_sub">Open to research discussions, collaborations, and interesting problems.</p>
     <div class="contact-links">
       <a href="mailto:ddyh717@g.ucla.edu" class="contact-link">ddyh717@g.ucla.edu</a>
       <a href="https://github.com/TomoriNa0" class="contact-link">github / TomoriNa0</a>
@@ -36,7 +39,8 @@
 </section>
 </div>
 
-<footer>© 2026 Dengyuhan Dai &nbsp;·&nbsp; Los Angeles → Sophia Antipolis → London</footer>
+<footer data-i18n="footer_main">© 2026 Dengyuhan Dai · Los Angeles → Sophia Antipolis → London</footer>
 
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>
