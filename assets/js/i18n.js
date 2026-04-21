@@ -44,6 +44,7 @@
       exp_ucla_role: 'B.S. Applied Mathematics',
       exp_ucla_courses_html: '<span class="exp-courses-label">Key Courses &nbsp;·&nbsp; </span>Algorithms &nbsp;·&nbsp; Machine Learning &nbsp;·&nbsp; ODE &nbsp;·&nbsp; Real Analysis &nbsp;·&nbsp; Numerical Methods',
       exp_inria_role: 'Research Intern · Geometric Modeling &amp; Computer Vision',
+      exp_inria_org: 'INRIA TITANE',
       exp_inria_work_html: '<span class="exp-courses-label">Key Work &nbsp;·&nbsp; </span>RL driven 3D mesh reconstruction &nbsp;·&nbsp; GNN + GAT geometric feature modeling &nbsp;·&nbsp; DINOv2 image encoding &nbsp;·&nbsp; A2C multi agent policy optimization',
       exp_icl_org: 'Imperial College London',
       exp_icl_role: 'MSc Artificial Intelligence',
@@ -88,6 +89,7 @@
       footer_note: '「この世界は好都合に未完成だ。僕は知りたいんだ。」',
 
       exp_page_inria_role: 'Research Intern · Geometric Modeling & Computer Vision',
+      exp_page_inria_org: 'INRIA TITANE',
       exp_page_inria_b1: 'Formulating large scale 3D point cloud mesh reconstruction as a reinforcement learning problem, converting geometric reconstruction into sequential decision optimization.',
       exp_page_inria_b2: 'Designing an RL based framework to minimize quadric error (QEM) under complexity constraints, balancing reconstruction fidelity and mesh simplification.',
       exp_page_inria_b3: 'Building GNN based geometric feature modeling with graph attention networks (GAT), and integrating DINOv2 for image based local encoding under noise and nonuniform sampling.',
@@ -162,6 +164,7 @@
       exp_ucla_role: '应用数学学士',
       exp_ucla_courses_html: '<span class="exp-courses-label">核心课程 &nbsp;·&nbsp; </span>算法 &nbsp;·&nbsp; 机器学习 &nbsp;·&nbsp; 常微分方程 &nbsp;·&nbsp; 实分析 &nbsp;·&nbsp; 数值方法',
       exp_inria_role: '研究实习生 · 几何建模与计算机视觉',
+      exp_inria_org: '法国国家信息与自动化研究所 TITANE实验室',
       exp_inria_work_html: '<span class="exp-courses-label">核心工作 &nbsp;·&nbsp; </span>强化学习驱动的三维网格重建 &nbsp;·&nbsp; GNN + GAT 几何特征建模 &nbsp;·&nbsp; DINOv2 图像编码 &nbsp;·&nbsp; A2C 多智能体策略优化',
       exp_icl_org: '帝国理工学院',
       exp_icl_role: '人工智能硕士',
@@ -206,6 +209,7 @@
       footer_note: '「这个世界残缺得恰到好处，才让我想求索通晓。」',
 
       exp_page_inria_role: '研究实习生 · 几何建模与计算机视觉',
+      exp_page_inria_org: '法国国家信息与自动化研究所 TITANE实验室',
       exp_page_inria_b1: '将大规模三维点云网格重建表述为强化学习问题，把几何重建过程转化为序列决策优化。',
       exp_page_inria_b2: '设计基于强化学习的框架，在复杂度约束下最小化 quadric error（QEM），平衡重建保真度与网格简化效率。',
       exp_page_inria_b3: '构建基于图注意力网络（GAT）的 GNN 几何特征建模，并融合 DINOv2 进行图像局部编码，以适应噪声和非均匀采样。',
